@@ -3,9 +3,9 @@ import joblib
 import numpy as np
 
 # Load model
-model = joblib.load("model/HeartDisease_rf.pkl")  # simpan di folder 'model'
+model = joblib.load("model/HeartDisease_rf.pkl")  # Simpen di folder model
 
-st.title("Heart Disease Prediction App ❤️")
+st.title("Heart Disease Prediction ❤️")
 
 # Input user
 age = st.number_input("Age", min_value=1, max_value=120, value=25)
@@ -42,3 +42,4 @@ if st.button("Predict"):
         st.success("No heart disease detected 🥳")
     else:
         st.error("Heart disease detected 😟")
+
